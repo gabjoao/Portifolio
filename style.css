@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Karantina:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
+    
+}
+
+:root{
+    --branco: #DDE1EE;
+    --preto: #222222;
+}
+
+body{
+    background-color: var(--branco);
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+header p{
+    color: var(--preto);
+    font-family: Italiana;
+    font-size: 16px;
+}
+
+menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+nav{
+    width: 730px;
+    height: 70px;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-family: Karantina;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+}
+
+/*Main*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+}
+
+main aside{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+main h1{
+    width: 499px;
+    height: 154px;  
+    color: var(--preto);
+    font-family: Karantina;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 18px;
+}
+
+main h2{
+    width: 499px;
+    height: 154px;
+    color: var(--preto);
+    font-family: Karantina;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 18px;
+
+}
+
+main .infos{
+    display: flex;
+    align-items: center;
+    gap: 250px;
+  
+}
+
+main .infos h3{
+    width: 234px;
+    font-family: Karantina;
+    font-size: 20px;
+
+}
+
+main .infos .espec{
+    color: var(--preto, #222);
+    text-align: right;
+    font-family: Italiana;
+    font-size: 32px;
+}

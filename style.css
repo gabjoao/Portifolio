@@ -148,6 +148,7 @@ main .infos .espec{
 #projetos .container h1{
     border: 1px solid var(--preto);
     margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,6 +228,7 @@ main .infos .espec{
     align-items: flex-end;
     height: 100%;
 
+
 }
 
 .projeto .site{
@@ -273,11 +275,18 @@ main .infos .espec{
     align-items: center;
     justify-content: center;
     font-family: Karantina;
-    font-size: 36px;
-    width: 287px;
+    font-size: 28px;
+    width: 205px;
+    gap: 10px;
     height: 116px;
     border: solid 1px var(--branco);
     align-self: flex-start;
+
+}
+
+.projeto .infos2 p{
+    padding: 0px 2px 0px 2px;
+    letter-spacing: 3.24px;
 }
 
 #projetos .linha{
@@ -285,4 +294,33 @@ main .infos .espec{
     height: 1px;
     background-color: var(--branco);
     margin: 50px 0px 30px 0px;
+}
+
+.b{
+    flex-direction: row-reverse;
+}
+
+.b .main{
+    flex-direction: row-reverse;
+}
+
+.b .main .site h2{
+    text-align: left;
+}
+
+.b .main .site p{
+    text-align: left;
+}
+
+.b .infos1{
+    align-items: flex-end;
+
+}
+
+.b .infos1 p{
+    justify-content: flex-end;
+}
+
+.reverse{
+    transform: rotateX(180deg);
 }

@@ -22,6 +22,9 @@ html{
 
 body{
     background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*Header*/
@@ -133,6 +136,7 @@ main .infos .espec{
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #projetos .container{
@@ -142,7 +146,7 @@ main .infos .espec{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 #projetos .container h1{
@@ -323,4 +327,113 @@ main .infos .espec{
 
 .reverse{
     transform: rotateX(180deg);
+}
+
+/*SOBRE*/
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+    margin-bottom: 200px;
+  
+}
+
+#sobre h1{
+    height: 169px;
+    width: 100%;
+    color: var(--preto);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 62px;
+}
+
+#sobre .infos1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+#sobre .infos1 p{
+    width: 567px;
+    height: 537px;
+    color: var(--preto);
+    font-family: Karantina;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    display: flex;
+    align-items: center;
+}
+
+#sobre .infos1 img{
+    width: 400px;
+    height: 537px;
+    background-color: var(--preto);
+}
+
+#sobre .tec-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-self: flex-end;
+
+}
+
+.tec-container .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--preto);
+}
+
+.tec-container .icon img{
+    width: 50px;
+    height: 50px;
+}
+
+#sobre .infos2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+#sobre .infos2 h2{
+    color: var(--preto);
+    font-family: Karantina;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 21.76px;
+    width: 1600px;
+    height: 343px;
+    transform: rotate(-90deg);
+}
+
+#sobre .infos2 p{
+    color: var(--preto);
+    text-align: right;
+    font-family: Karantina;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
 }

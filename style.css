@@ -35,6 +35,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
+    width: 100%;
 }
 
 header p{
@@ -72,6 +73,7 @@ main{
     justify-content: space-around;
     align-items: center;
     height: 450px;
+    width: 100%;
 }
 
 main aside{
@@ -436,4 +438,151 @@ main .infos .espec{
     font-weight: 400;
     line-height: normal;
     letter-spacing: 3.6px;
+}
+
+/*CONTATO*/
+
+footer{
+    background-color: var(--preto);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contato{
+    width: 1150px;
+    height: 100%;
+}
+
+#contato .titulo{
+    margin-top: 90px;
+    display: flex;
+    width: 1109px;
+    height: 281px;
+    border: 1px solid var(--branco);
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    color: var(--branco);
+}
+
+#contato .titulo h1{
+    font-family: Karantina;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#contato .titulo p{
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+#contato .infos1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--branco);
+    align-items: center;
+    margin-top: 90px;
+}
+
+#contato .contatos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#contato .contatos div{
+    display: flex;
+    font-family: Playfair Display;
+    font-size: 40px;
+    align-items: center;
+    gap: 50px;
+}
+
+.contatos div p{
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+#contato .contatos div .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--branco);
+}
+
+#contato .img-container img{
+    width: 50px;
+    height: 50px;
+}
+
+#contato .infos1 h2{
+    color: var(--preto);
+    text-align: right;
+    font-family: Italiana;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--branco);
+}
+
+#contato .linha{
+    width: 450px;
+    height: 1px;
+    background-color: var(--branco);
+    margin: 50px 0px 30px 0px;
+}
+
+#contato .infos2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+#contato .qr{
+    width: 344px;
+    height: 345px;
+    border: 1px solid var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contato .infos2 .contatos p{
+    color: var(--branco);
+}
+
+#gh{
+    width: 65px;
+    height: 65px;
+}
+
+#direito{
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 24px;
+    color: var(--branco);
+    margin-bottom: 50px;
 }

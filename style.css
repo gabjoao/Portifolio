@@ -25,6 +25,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url("media/ruido.png");
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 /*Header*/
@@ -36,7 +39,15 @@ header{
     align-items: center;
     padding-left: 20px;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
+
+a, a:visited{
+    color: var(--branco);
+}
+
 
 header p{
     color: var(--preto);

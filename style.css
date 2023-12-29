@@ -53,6 +53,7 @@ header p{
     color: var(--preto);
     font-family: Italiana;
     font-size: 16px;
+    cursor: default;
 }
 
 menu{
@@ -61,6 +62,21 @@ menu{
     width: 100%;
     justify-content: space-around;
     
+}
+
+menu li{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+menu li:hover::after{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: var(--branco);
+    animation: fade .5s;
 }
 
 nav{
@@ -73,7 +89,6 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
 }
 
 /*Main*/
@@ -284,6 +299,13 @@ main .infos .espec{
     width: 356px;
     height: 254px;
     box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.50);
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: 100ms;
+}
+
+.projeto img:hover{
+    scale: 110%;
 }
 
 .projeto .infos2{
@@ -417,6 +439,47 @@ main .infos .espec{
 .tec-container .icon img{
     width: 50px;
     height: 50px;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-delay: 50ms;
+
+}
+
+.tec-container .icon img:hover{
+    scale: 110%;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0%;
+        transform: scale(.9);
+}
+}
+
+.tec-container .icon:hover::after{
+    position: absolute;
+    margin-top: 150px;
+    color: var(--preto);
+    font-family: Karantina;
+    font-size: 32px;
+    letter-spacing: 2px;
+    animation: fade .5s;
+}
+
+#java:hover::after{
+    content: "Java";
+}
+#c:hover::after{
+    content: "C";
+}
+#html:hover::after{
+    content: "HTML";
+}
+#css:hover::after{
+    content: "CSS";
+}
+#js:hover::after{
+    content: "JavaScript";
 }
 
 #sobre .infos2{
@@ -543,6 +606,13 @@ footer{
 #contato .img-container img{
     width: 50px;
     height: 50px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: 100ms;
+}
+
+#contato .img-container img:hover{
+    scale: 110%;
 }
 
 #contato .infos1 h2{

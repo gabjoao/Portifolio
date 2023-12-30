@@ -679,3 +679,8 @@ footer{
     color: var(--branco);
     margin-bottom: 50px;
 }
+
+/*Efeito reveal*/
+.projeto, .infos1, .infos2{
+    visibility: hidden;
+}

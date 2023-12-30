@@ -1,3 +1,8 @@
+//Efeito de reveal
+window.sr = ScrollReveal({ reset: false });
+sr.reveal(".projeto", { duration: 1000 });
+sr.reveal(".infos1", { duration: 1000 });
+sr.reveal(".infos2", { duration: 1000 });
 
 //Mudar a cor das infos da header
 var header = document.getElementById("header")

@@ -42,6 +42,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
+    backdrop-filter: blur(3px);
 }
 
 a, a:visited{
@@ -92,13 +93,14 @@ menu li:hover::after{
 nav{
     width: 730px;
     height: 70px;
-    background-color: var(--preto);
+    background-color: #222222dd;
     color: var(--branco);
     font-family: Karantina;
     font-size: 32px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    backdrop-filter: blur(3px);
 }
 
 /*Main*/

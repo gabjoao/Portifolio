@@ -693,8 +693,7 @@ footer{
     justify-content: center;
     position: fixed;
     z-index: 1;
-    animation: fade .5s;
-
+    background-color: #222222a1;
 }
 
 #info .x{
@@ -721,13 +720,14 @@ footer{
 }
 
 #info .container{
+    animation: fade .5s;
     width: 635px;
     height: 613px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--branco);
-
+    margin-top: 5%;
     box-shadow: 0px 14px 31px 0px rgba(0, 0, 0, 0.93), 0px 57px 57px 0px rgba(0, 0, 0, 0.81), 0px 128px 77px 0px rgba(0, 0, 0, 0.48), 0px 228px 91px 0px rgba(0, 0, 0, 0.14), 0px 356px 100px 0px rgba(0, 0, 0, 0.02);
     
 }

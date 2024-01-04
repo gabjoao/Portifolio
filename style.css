@@ -421,11 +421,15 @@ main .infos .espec{
     align-items: center;
 }
 
-#sobre .infos1 img{
+#sobre .infos1 .foto{
     width: 400px;
     height: 537px;
     background-color: var(--preto);
+    background-image: url("media/eu.jpg");
+    background-position: center;
     box-shadow: 3px 1px 6px 0px rgba(0, 0, 0, 0.29), 11px 5px 12px 0px rgba(0, 0, 0, 0.26), 24px 10px 16px 0px rgba(0, 0, 0, 0.15), 43px 18px 19px 0px rgba(0, 0, 0, 0.04), 67px 28px 20px 0px rgba(0, 0, 0, 0.01);
+
+    overflow: hidden;
 }
 
 #sobre .tec-container{
@@ -538,6 +542,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px -21px 47px 0px rgba(0, 0, 0, 0.15), 0px -85px 85px 0px rgba(0, 0, 0, 0.13), 0px -191px 115px 0px rgba(0, 0, 0, 0.08), 0px -340px 136px 0px rgba(0, 0, 0, 0.02), 0px -531px 149px 0px rgba(0, 0, 0, 0.00);
 
 }
 

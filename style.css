@@ -35,9 +35,8 @@ body{
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 20px;
     width: 100%;
     position: sticky;
     top: 0;
@@ -71,8 +70,8 @@ menu{
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
-    gap: 55px;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
@@ -89,6 +88,10 @@ menu li:hover::after{
     height: 1px;
     background-color: var(--branco);
     animation: fade .5s;
+}
+
+menu .menu{
+    display: none;
 }
 
 nav{
@@ -110,7 +113,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     height: 550px;
     width: 100%;
     background-image: url("media/main-pattern.png");
@@ -124,18 +127,15 @@ main aside{
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-left: 15%;
     align-items: center;
     justify-content: center;
 }
 
 
 main h1{
-    display: flex;
+    text-align: center;
     width: 942px;
     height: 154px;
-    flex-direction: column;
-    justify-content: center;
     color: var(--preto, #222);
     font-family: Karantina;
     font-size: 200px;
@@ -157,7 +157,7 @@ main .infos{
 
 main .infos .espec{
     color: var(--preto, #222);
-    text-align: left;
+    text-align: center;
     font-family: Italiana;
     font-size: 32px;
 }
@@ -189,7 +189,7 @@ main .infos .espec{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 113px;
+    height: 125px;
     border: 2px solid var(--preto);
     background: var(--branco);
     box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px 24px 24px 0px rgba(0, 0, 0, 0.21) inset, 0px 55px 33px 0px rgba(0, 0, 0, 0.13) inset, 0px 98px 39px 0px rgba(0, 0, 0, 0.04) inset, 0px 152px 43px 0px rgba(0, 0, 0, 0.00) inset;
@@ -553,8 +553,7 @@ footer{
     box-shadow: 0px -21px 47px 0px rgba(0, 0, 0, 0.15), 0px -85px 85px 0px rgba(0, 0, 0, 0.13), 0px -191px 115px 0px rgba(0, 0, 0, 0.08), 0px -340px 136px 0px rgba(0, 0, 0, 0.02), 0px -531px 149px 0px rgba(0, 0, 0, 0.00);
     background-image: url("media/contato-pattern.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 
 }
@@ -713,6 +712,8 @@ footer{
     visibility: hidden;
 }
 
+/*Infos sobre os projetos*/
+
 #info{
     display: none;
     height: 100%;
@@ -726,8 +727,8 @@ footer{
 }
 
 #info .x{
-    margin-left: 80%;
-    margin-top: 10px;
+    margin-left: 85%;
+    margin-top: 15px;
     cursor: pointer;
     transition-property: all;
     transition-duration: .5s;

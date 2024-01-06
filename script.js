@@ -1,5 +1,5 @@
 //Efeito de reveal
-window.sr = ScrollReveal({ reset: false });
+window.sr = ScrollReveal({ reset: true });
 sr.reveal(".projeto", { duration: 1000 });
 sr.reveal(".infos1", { duration: 1000 });
 sr.reveal(".infos2", { duration: 1000 });
@@ -40,7 +40,7 @@ setInterval(function(){
         }
     }
 //500
-}, 500)
+}, 250)
 
 class Projeto{
     constructor(titulo, img1, img2, p, info, link){

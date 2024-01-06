@@ -23,7 +23,6 @@ setInterval(function(){
     else if(projetos.y <= 186 && projetos.y > -3194){
         for(var x = 0; x < info.length; x++){
             info[x].textContent = "PROJETOS"
-            info[0].className = "p-preto"
             info[x].className = "p-branco"
         }
         

@@ -71,7 +71,8 @@ menu{
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 55px;
     
 }
 
@@ -92,61 +93,59 @@ menu li:hover::after{
 
 nav{
     width: 730px;
-    height: 70px;
-    background-color: #222222dd;
+    height: 65px;
+    background-color: #222222f6;
     color: var(--branco);
     font-family: Karantina;
     font-size: 32px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     backdrop-filter: blur(3px);
+    border-radius: 0px 0px 10px 10px;
 }
 
 /*Main*/
 
 main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    height: 450px;
+    align-items: flex-start;
+    height: 550px;
     width: 100%;
+    background-image: url("media/main-pattern.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 main aside{
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin-left: 15%;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 
 main h1{
-    width: 499px;
-    height: 154px;  
-    color: var(--preto);
-    font-family: Karantina;
-    font-size: 200px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: 18px;
-}
-
-main h2{
-    width: 499px;
+    display: flex;
+    width: 942px;
     height: 154px;
-    color: var(--preto);
+    flex-direction: column;
+    justify-content: center;
+    color: var(--preto, #222);
     font-family: Karantina;
     font-size: 200px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 18px;
-
+    margin-top: 50px;
 }
+
 
 main .infos{
     display: flex;
@@ -155,16 +154,10 @@ main .infos{
   
 }
 
-main .infos h3{
-    width: 234px;
-    font-family: Karantina;
-    font-size: 20px;
-
-}
 
 main .infos .espec{
     color: var(--preto, #222);
-    text-align: right;
+    text-align: left;
     font-family: Italiana;
     font-size: 32px;
 }
@@ -175,12 +168,12 @@ main .infos .espec{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
     margin-bottom: 100px;
+    width: 100%;
 }
 
 #projetos .container{
-    width: 1122px;
+    width: 100%;
     height: 200%;
     background-color: var(--preto);
     display: flex;
@@ -189,21 +182,32 @@ main .infos .espec{
     box-shadow: 11px 11px 34px 0px rgba(0, 0, 0, 0.25), 43px 45px 62px 0px rgba(0, 0, 0, 0.21), 96px 102px 84px 0px rgba(0, 0, 0, 0.13), 170px 182px 100px 0px rgba(0, 0, 0, 0.04), 266px 284px 109px 0px rgba(0, 0, 0, 0.00);
 }
 
-#projetos .container h1{
-    border: 1px solid var(--preto);
-    margin-top: 30px;
-    margin-bottom: 30px;
+#projetos .container .titulo{
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 400;
-    color: var(--preto, #222);
+    width: 100%;
+    height: 113px;
+    border: 2px solid var(--preto);
+    background: var(--branco);
+    box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px 24px 24px 0px rgba(0, 0, 0, 0.21) inset, 0px 55px 33px 0px rgba(0, 0, 0, 0.13) inset, 0px 98px 39px 0px rgba(0, 0, 0, 0.04) inset, 0px 152px 43px 0px rgba(0, 0, 0, 0.00) inset;
+    
+        
+}
+
+#projetos .container .titulo h1{
+    width: 100%;
+    color: var(--preto);
     text-align: center;
     font-family: Playfair Display;
     font-size: 96px;
-    width: 100%;
-    height: 113px;
-    background-color: var(--branco);
+    font-style: normal;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.29), 0px 5px 5px rgba(0, 0, 0, 0.26), 0px 12px 7px rgba(0, 0, 0, 0.15), 0px 21px 8px rgba(0, 0, 0, 0.04), 0px 33px 9px rgba(0, 0, 0, 0.01);
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 8.64px;
 }
 
 #projetos .container .faixa{
@@ -230,6 +234,7 @@ main .infos .espec{
     align-items: center;
     padding: 60px 30px 60px 30px;
     height: 588px;
+    width: 100%;
 
 }
 
@@ -242,7 +247,7 @@ main .infos .espec{
 }
 
 .projeto h4{
-    width: 120px;
+    width: 205px;
     height: 116px;
     border: 1px solid var(--branco);
     display: flex;
@@ -270,9 +275,9 @@ main .infos .espec{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
     height: 100%;
-
-
 }
 
 .projeto .site{
@@ -328,16 +333,18 @@ main .infos .espec{
     font-family: Karantina;
     font-size: 28px;
     width: 205px;
-    gap: 10px;
-    height: 116px;
+    height: 120px;
     border: solid 1px var(--branco);
     align-self: flex-start;
+    text-align: center;
 
 }
 
 .projeto .infos2 p{
+    width: 205px;
     padding: 0px 2px 0px 2px;
-    letter-spacing: 3.24px;
+    letter-spacing: 1px;
+    gap: 20px;
 }
 
 #projetos .linha{
@@ -397,6 +404,7 @@ main .infos .espec{
     font-weight: 900;
     line-height: normal;
     letter-spacing: 62px;
+            
 }
 
 #sobre .infos1{
@@ -543,6 +551,11 @@ footer{
     align-items: center;
     justify-content: center;
     box-shadow: 0px -21px 47px 0px rgba(0, 0, 0, 0.15), 0px -85px 85px 0px rgba(0, 0, 0, 0.13), 0px -191px 115px 0px rgba(0, 0, 0, 0.08), 0px -340px 136px 0px rgba(0, 0, 0, 0.02), 0px -531px 149px 0px rgba(0, 0, 0, 0.00);
+    background-image: url("media/contato-pattern.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -566,7 +579,7 @@ footer{
 
 #contato .titulo h1{
     font-family: Karantina;
-    font-size: 200px;
+    font-size: 150px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -601,7 +614,7 @@ footer{
 #contato .contatos div{
     display: flex;
     font-family: Playfair Display;
-    font-size: 40px;
+    font-size: 32px;
     align-items: center;
     gap: 50px;
 }
@@ -639,10 +652,11 @@ footer{
     color: var(--preto);
     text-align: right;
     font-family: Italiana;
-    font-size: 96px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 282px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--branco);
 }
@@ -708,6 +722,7 @@ footer{
     position: fixed;
     z-index: 1;
     background-color: #222222a1;
+    backdrop-filter: blur(1px);
 }
 
 #info .x{
@@ -810,7 +825,6 @@ footer{
     width: 232px;
     height: 165px;
     border: 1px solid var(--preto, #222);
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.25), -10px 0px 10px 0px rgba(0, 0, 0, 0.21), -21px 0px 13px 0px rgba(0, 0, 0, 0.13), -38px 0px 15px 0px rgba(0, 0, 0, 0.04), -60px 0px 17px 0px rgba(0, 0, 0, 0.00);
 
 }

@@ -175,7 +175,7 @@ main .infos .espec{
 #projetos .container{
     width: 100%;
     height: 200%;
-    background-color: var(--preto);
+    background: radial-gradient(50% 50% at 50% 50%, #313131 0%, #222 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,6 +297,7 @@ main .infos .espec{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 5.76px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.64), 0px 4px 4px rgba(0, 0, 0, 0.55), 0px 10px 6px rgba(0, 0, 0, 0.33), 0px 18px 7px rgba(0, 0, 0, 0.10), 0px 27px 8px rgba(0, 0, 0, 0.01);
 }
 
 .projeto .main .site p{
@@ -315,7 +316,8 @@ main .infos .espec{
 .projeto img{
     width: 356px;
     height: 254px;
-    box-shadow: -3px 0px 7px 0px rgba(0, 0, 0, 0.59), -13px 2px 13px 0px rgba(0, 0, 0, 0.51), -28px 4px 17px 0px rgba(0, 0, 0, 0.30), -50px 8px 20px 0px rgba(0, 0, 0, 0.09), -78px 12px 22px 0px rgba(0, 0, 0, 0.01);
+    box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.34), 0px 33px 33px 0px rgba(0, 0, 0, 0.30), 0px 74px 44px 0px rgba(0, 0, 0, 0.18), 0px 132px 53px 0px rgba(0, 0, 0, 0.05), 0px 206px 58px 0px rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
     transition-property: all;
     transition-duration: .5s;
     transition-delay: 100ms;
@@ -436,7 +438,7 @@ main .infos .espec{
     background-image: url("media/eu.jpg");
     background-position: center;
     box-shadow: 3px 1px 6px 0px rgba(0, 0, 0, 0.29), 11px 5px 12px 0px rgba(0, 0, 0, 0.26), 24px 10px 16px 0px rgba(0, 0, 0, 0.15), 43px 18px 19px 0px rgba(0, 0, 0, 0.04), 67px 28px 20px 0px rgba(0, 0, 0, 0.01);
-
+    border-radius: 10px;
     overflow: hidden;
 }
 

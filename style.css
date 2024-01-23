@@ -870,11 +870,10 @@ footer{
     /*Main*/
 
     main{
-        height: 360px;
+        height: 290px;
         width: 100%;
         background-image: url("media/main-pattern-2.png");
         background-size: cover;
-
         
     }
 
@@ -883,7 +882,7 @@ footer{
         width: 100%;
         letter-spacing: 5.76px;
         height: 70px;
-        font-size: 92px;
+        font-size: 78px;
     }
 
     main .infos .espec{
@@ -906,7 +905,7 @@ footer{
     #projetos .container .faixa{
         margin-top: 10px;
         height: 23px;
-        font-size: 7px;
+        font-size: 6px;
  
     }
 
@@ -986,7 +985,7 @@ footer{
 
     .projeto .infos2{
         font-size: 20px;
-        width: 114px;
+        width: 95px;
         height: 50px;
         align-self: flex-end;
         position: absolute;
@@ -1089,7 +1088,7 @@ footer{
         position: absolute;
         align-self: center;
         width: 300px;
-        height: 200px;
+        height: 252px;
         font-size: 36px;
         letter-spacing: 12.24px;
         left: 0;
@@ -1097,7 +1096,7 @@ footer{
 
     #sobre .infos2 p{
         width: 290px;
-        height: 343px;  
+        height: 100%;
         text-align: right;
         font-family: Karantina;
         font-size: 28px;
@@ -1105,9 +1104,14 @@ footer{
         font-weight: 400;
         line-height: normal;
         letter-spacing: 2.16px;
+        padding-right: 20px;
     }
 
     /*CONTATO*/
+
+    footer{
+        background-repeat: repeat;
+    }
 
     #contato{
         width: 100%;

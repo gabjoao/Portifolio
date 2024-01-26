@@ -216,7 +216,6 @@ main .infos .espec{
     height: 44px;
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: var(--preto);
     border: 1px solid var(--branco);
     font-family: Italiana;
@@ -224,6 +223,28 @@ main .infos .espec{
     color: var(--branco);
     font-weight: 400;
     letter-spacing: 1.44px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#projetos .container .faixa p{
+    position: absolute;
+    width: 100%;
+}
+
+#projetos .container .faixa p:first-child{
+    left: 100%;
+    animation: slide 17s infinite linear;
+}
+
+#projetos .container .faixa p:last-child{
+    animation: slide 18s infinite linear;
+}
+
+@keyframes slide{
+    from { transform: translate(-150%);}
+    to{transform: translate(100%);}
 }
 
 .projeto{

@@ -56,7 +56,7 @@ class Projeto{
 var Projetos = [];
 Projetos.push(new Projeto("Imobiliária Fachada", "media/projeto1.png", "media/projeto1-2.png" ,"O projeto consiste na utilização de classes e objetos em JavaScript para a criação de imóveis. Após o usuário cadastrar, o imóvel aparecerá na página e ficará salvo no localStorage toda vez que o usuário entrar novamente.", "out 2023 / Imobiliária Fachada / João Gabriel / out 2023", "https://gabjoao.github.io/Imobiliaria-Fachada/"));
 
-Projetos.push(new Projeto("Serene", "media/projeto2.png", "media/projeto2-2.png", "Uma página de E-commerce de uma marca fictícia. A página possui quatro seções, além de informações específicas para cada produto com opções para compras.", "set 2023 / Serene / João Gabriel / set 2023", "https://gabjoao.github.io/landing-page-serene/"));
+Projetos.push(new Projeto("Serene", "media/projeto2.png", "media/projeto2-2.png", "Uma página landing page de uma marca fictícia. A página possui quatro seções, com informações sobre a marca e feedbacks de clientes.", "set 2023 / Serene / João Gabriel / set 2023", "https://gabjoao.github.io/landing-page-serene/"));
 
 Projetos.push(new Projeto("Life is Strange", "media/projeto3.png", "media/projeto3-2.png", "Uma Landing Page informativa sobre a saga de jogos Life is Strange. Possui as informações principais do jogo, além de páginas específicas para cada um dos jogos e uma página de contato.", "set 2023 / Life is Strange / João Gabriel / set 2023", "https://gabjoao.github.io/Life-is-Strange-Page/"));
 
